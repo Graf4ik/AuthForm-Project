@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Auth Form</title>
+</head>
+
+<body>
+
+    <!-- Form -->
+    <div class="container">
+          <form class="form">
+            <div class="form-back">
+              <a href="#"><h5> &#8592; Вернуться</h5></a>
+            </div>
+            <div class="form-item">
+              <img class="form-logo" src="/images/3.png">
+            </div>
+            <div class="form-item">
+              <label for="inputTel"></label>
+              <input type="tel" 
+              name="tel" 
+              class="tel" 
+              id="inputTel"
+              placeholder="Номер телефона"
+              data-grouplength="3,3,4"
+              autocomplete="off"
+              required
+              pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+              <div class="error" style="color: red; font-size: 13px; font-weight: bold;"></div>
+              <span id="Img" class="form-img">!</span>
+              <img id="Img2" class="form-img form-img2" src="./images/4.png">
+            </div>
+            <div class="form-item">
+              <label for="inputPassword"></label>
+              <input type="text" 
+              name="password" 
+              class="password" 
+              id="inputPassword"
+              placeholder="Пароль"
+              autocomplete="off"
+              required 
+              minlength="5">
+              <div class="error" style="color: red; font-size: 13px; font-weight: bold;"></div>
+            </div>
+            <div class="form-item form-item--checkbox">
+              <div class="checkbox-group">
+                  <input type="checkbox" 
+                  id="checkbox"
+                  class="form-check checkbox" 
+                  name="checkbox">
+                  <label for="checkbox" class="checkbox-label"></label>
+              </div>
+                <p class="remember">Запомнить</p>
+                <a href="#"><p class="forget-password">Забыл пароль</p></a>
+            </div>
+            <button class="btn" type="submit">Войти
+          </form> 
+
+  </div>
+
+  <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
